@@ -3,7 +3,7 @@ package ru.job4j;
 public class Kvitancia {
     private Integer number;
     private String name;
-    private Float summa;
+    public Float summa;
 
     private String nameCorrector;
 
@@ -70,6 +70,8 @@ class MyOplata {
         gaz.corrections();
 
         System.out.println(Kvitancia.counts);
+
+        System.out.println(new Kvitancia(14, "asd", 12.54f).summa);
 
         Kvitancia.myCounts();
     }
